@@ -1,0 +1,10 @@
+{
+  "name": "static-starter",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A starting point for static design templates",
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "dependencies": {}
+}
