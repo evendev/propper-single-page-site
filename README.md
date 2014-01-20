@@ -23,6 +23,24 @@ Just use Harp to run a local server instance. By default Harp will serve on port
 
 You should be able to navigate to [localhost:9000](http://localhost:9000) to see your site.
 
+## Harp documentation
+
+See [Harp](http://harpjs.com/docs/) for more info.
+
+## Global data
+
+You'll notice the site's title is set to "My Project" by default. Edit `harp.json` in the project root to change this data.
+
+You can add arbitrary JSON data to this file, and all `public` files will have access to it.
+
+I prefer to keep global site data (like name, tagline, email address for contact page) in `harp.json` under a key of `site`, just to keep it cleaner and to avoid naming collisions later on.
+
+See [Harp](http://harpjs.com/docs/development/globals) for more on global data.
+
+You can also set up a `_data.json` file in any directory within `public`, and the files within that directory will have access to that data. 
+
+See [Harp](http://harpjs.com/docs/development/metadata) for more.
+
 ## Layouts
 
 Modify header, footer, and navigation in the main layout file: `public/_layout.ejs`.
@@ -31,9 +49,7 @@ Modify header, footer, and navigation in the main layout file: `public/_layout.e
 
 Since `_layout.ejs` starts with an underscore, Harp will not serve or build this file directly. Simply prefix any file with an underscore `_` and Harp will not serve or build it. 
 
-## Harp documentation
-
-See [Harp](http://harpjs.com/docs/) for more info.
+See [Harp](http://harpjs.com/docs/development/layout) for more on layouts.
 
 ## Creating new pages
 
