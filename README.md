@@ -34,3 +34,11 @@ Since `_layout.ejs` starts with an underscore, Harp will not serve or build this
 ## Harp documentation
 
 See [Harp](http://harpjs.com/docs/) for more info.
+
+## Creating new pages
+
+To create a new page, simply create a file in `public` with an extension of `ejs`.
+
+For example, to create a contact page, you'd create `public/contact.ejs`. You'll then be able to view that page at [localhost:9000/contact](http://localhost:9000/contact). 
+
+You'll probably want to add a link in the navigation menu, found in the layout file: `public/_layout.ejs`.
