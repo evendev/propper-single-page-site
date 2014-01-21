@@ -1,12 +1,14 @@
+var util = require('util');
+
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
     app: {
-      src: './public',
-      dest: './dist',
-      secrets: '<%= grunt.file.readJSON("secrets.json") %>'
+      src: 'public/',
+      dest: 'dist/',
+      secrets: grunt.file.readYAML('secrets.yml')
     },
     harp: {
       server: {
@@ -21,14 +23,14 @@ module.exports = function(grunt) {
     rsync: {
       options: {
         args: ['--verbose'],
-        exclude: ['.git*', '.less', 'node_modules'],
+        exclude: ['.git*', '.less', 'node_modules', '.DS_Store'],
         recursive: true
       },
       stage: {
         options: {
           src: '<%= app.dest %>',
           dest: '<%= app.secrets.rsync.stage.dest %>',
-          host: '<%= app.secrets.rsync.stage.host %>'
+          host: '<%= app.secrets.rsync.stage.host %>',
         }
       }
     }
