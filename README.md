@@ -11,15 +11,15 @@ First clone the repository to your local workstation.
 
 Then install `npm` dependencies:
 
-        $> cd path/to/my-project
-        $> npm install
+    $ cd path/to/my-project
+    $ npm install
 
 ## Running a local server
 
 Just use Harp to run a local server instance. By default Harp will serve on port 9000.
 
-        $> cd path/to/my-project
-        $> harp server
+    $ cd path/to/my-project
+    $ harp server
 
 You should be able to navigate to [localhost:9000](http://localhost:9000) to see your site.
 
@@ -67,14 +67,14 @@ Deploying a static build of harp is easy using [grunt-harp](https://github.com/s
 
 First, copy `sample-secrets.json` to `secrets.json` and fill in with your server's credentials. 
 
-        {
-          "rsync": {
-            "stage": {
-              "dest": "path/to/server/webroot",
-              "host": "user@example.com"
-            }
-          }
+    {
+      "rsync": {
+        "stage": {
+          "dest": "path/to/server/webroot",
+          "host": "user@example.com"
         }
+      }
+    }
 
 You may create as many targets as you'd like. See the `grunt-rsync` repo for more, just make sure you add in the appropriate credentials into your `secrets.json` file.
 
