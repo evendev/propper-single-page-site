@@ -58,3 +58,31 @@ To create a new page, simply create a file in `public` with an extension of `ejs
 For example, to create a contact page, you'd create `public/contact.ejs`. You'll then be able to view that page at [localhost:9000/contact](http://localhost:9000/contact). 
 
 You'll probably want to add a link in the navigation menu, found in the layout file: `public/_layout.ejs`.
+
+## Deployment
+
+Deploying a static build of harp is easy using [grunt-harp](https://github.com/shovon/grunt-harp) and [grunt-rsync](https://github.com/jedrichards/grunt-rsync). See those repositories for more info.
+
+### Setup credentials
+
+First, copy `sample-secrets.json` to `secrets.json` and fill in with your server's credentials. 
+
+        {
+          "rsync": {
+            "stage": {
+              "dest": "path/to/server/webroot",
+              "host": "user@example.com"
+            }
+          }
+        }
+
+You may create as many targets as you'd like. See the `grunt-rsync` repo for more, just make sure you add in the appropriate credentials into your `secrets.json` file.
+
+### Deploying
+
+Deploying is easy using the grunt task `deploy`. First, `grunt build` your app, then `grunt deploy:[env]`. 
+
+For example, to build and deploy to your `stage` environment:
+
+        $ grunt build
+        $ grunt deploy:stage

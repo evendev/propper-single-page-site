@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         source: '<%= app.src %>'
       },
       dist: {
-        source: '<%= app.src %>',
+        source: '.',
         dest: '<%= app.dest %>'
       }
     },
