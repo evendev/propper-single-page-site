@@ -34,10 +34,20 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', []);
+  grunt.registerTask('server', [
+    'harp:server'
+  ]);
+
+  grunt.registerTask('default', [
+    'server'
+  ]);
 
   grunt.registerTask('build', [
     'harp:dist'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'rsync'
   ]);
 
 };
