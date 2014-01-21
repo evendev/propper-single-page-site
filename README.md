@@ -7,7 +7,7 @@ A starter for template design with Twitter Bootstrap 3 and Harp.
 
 First clone the repository to your local workstation.
 
-        $> git clone https://github.com/jamessonbros/static-starter my-project
+    $ git clone https://github.com/jamessonbros/static-starter my-project
 
 Then install `npm` dependencies:
 
@@ -80,5 +80,9 @@ Deploying is easy using the grunt task `deploy`. First, `grunt build` your app, 
 
 For example, to build and deploy to your `stage` environment:
 
-        $ grunt build
-        $ grunt deploy:stage
+    $ grunt build
+    $ grunt deploy:stage
+
+There's also a grunt task to handle both of the above in one swipe: `grunt push:[env]`. The below is equivalent to running `grunt build` and `grunt deploy:[env]`.
+
+    $ grunt push:stage

@@ -52,4 +52,9 @@ module.exports = function(grunt) {
     'rsync'
   ]);
 
+  grunt.registerTask('push', [
+    'build',
+    'rsync'
+  ]);
+
 };
