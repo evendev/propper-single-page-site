@@ -1,7 +1,12 @@
 {
   "globals": {
     "site": {
-      "name": "My Project"
+      "name": "Propper Construction",
+      "tagline": "",
+      "email": "",
+      "emailObfuscated": "",
+      "phone": "",
+      "fax": ""
     }
   }
 }
