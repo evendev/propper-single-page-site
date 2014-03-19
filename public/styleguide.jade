@@ -2,7 +2,43 @@
   h1 Style Guide
   p: small Note this styleguide is an extension of the Twitter Bootstrap CSS framework. See 
     a(href='http://getbootstrap.com/') getbootstrap.com
-    |  for more examples
+    |  for more examples.
+
+h2 Color scheme
+
+dl.dl-horizontal
+  dt Background
+  dd 
+    span.color-block(style='background:#fff')
+    code #ffffff
+  dt Foreground
+  dd 
+    span.color-block(style='background:#191919')
+    code #191919 
+  dt Light blue
+  dd
+    span.color-block(style='background:#a0d3e6')
+    code #a0d3e6
+  dt Darker blue
+  dd
+    span.color-block(style='background:#277693')
+    code #277693
+  dt Orange
+  dd
+    span.color-block(style='background:#c44833')
+    code #c44833
+  dt Light orange
+  dd
+    span.color-block(style='background:#de8d7f')
+    code #de8d7f
+  dt Green
+  dd
+    span.color-block(style='background:#00b233')
+    code #00b233
+  dt Light green
+  dd
+    span.color-block(style='background:#00ff48')
+    code #00ff48
 
 h2 Headings
 
@@ -24,13 +60,15 @@ p Regular paragraph text. Lorem ipsum quis nostrud exercitation ullamco laboris 
 
 p.lead Lead paragraph text lorem ipsum quis nostrud
 
-p: small Small text
-
 p
   strong Bold 
   |  and 
   em emphasized
-  |  text.
+  |  text
+
+p: small Small text
+
+p.text-muted Muted text
 
 h2 Alignment
 
@@ -70,6 +108,11 @@ h2 Blockquote
 
 blockquote
   p Blockquote lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  footer
+    |  Author Name
+
+blockquote.blockquote-reverse
+  p Reversed blockquote lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   footer
     |  Author Name
 

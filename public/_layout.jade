@@ -10,8 +10,16 @@ head
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
 body
-  .container
-    != yield
+  header.site-header
+    .container
+  .site-main
+    .container
+      != yield
+  footer.site-footer
+    .container
+      .row
+        .col-xs-12
+          p &copy; #{ new Date().getFullYear() } #{ site.name }
 
   script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
   script(src='/assets/js/bootstrap.min.js')

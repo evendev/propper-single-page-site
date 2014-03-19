@@ -10,7 +10,11 @@
 @black: #000;
 @near-black: #191919;
 @light-blue: #a0d3e6;
+@darker-blue: #277693;
 @orange: #c44833;
+@light-orange: #de8d7f;
+@green: #00b233;
+@light-green: #00ff48;
 
 // fonts
 @font-family-brand-sans-serif: Arial;
@@ -22,13 +26,22 @@
 
 // colors
 @body-bg: @white;
-@text-color: @gray-darker;
+@text-color: @near-black;
 @link-color: @orange;
-@link-hover-color: @black;
+@link-hover-color: @near-black;
 
 // navbar
 
-
+/** 
+ * Color blocks
+ */
+span.color-block {
+  display: inline-block;
+  margin: 0 1em 0 0;
+  height: 0.9em;
+  width: 2em;
+  border: solid 1px @near-black;
+}
 
 /** 
  * Site header
