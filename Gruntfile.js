@@ -7,7 +7,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     app: {
       src: 'public/',
-      dest: 'dist/',
+      dest: 'www/',
       secrets: grunt.file.readYAML('secrets.yml')
     },
     harp: {

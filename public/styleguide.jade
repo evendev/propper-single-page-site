@@ -6,39 +6,64 @@
 
 h2 Color scheme
 
-dl.dl-horizontal
-  dt Background
-  dd 
-    span.color-block(style='background:#fff')
-    code #ffffff
-  dt Foreground
-  dd 
-    span.color-block(style='background:#191919')
-    code #191919 
-  dt Light blue
-  dd
-    span.color-block(style='background:#a0d3e6')
-    code #a0d3e6
-  dt Darker blue
-  dd
-    span.color-block(style='background:#277693')
-    code #277693
-  dt Orange
-  dd
-    span.color-block(style='background:#c44833')
-    code #c44833
-  dt Light orange
-  dd
-    span.color-block(style='background:#de8d7f')
-    code #de8d7f
-  dt Green
-  dd
-    span.color-block(style='background:#00b233')
-    code #00b233
-  dt Light green
-  dd
-    span.color-block(style='background:#00ff48')
-    code #00ff48
+table.table.table-condensed
+  thead
+    tr
+      th Name/Use
+      th Example
+      th Hex code
+      th LESS Variable
+  tbody
+    tr
+      td White/Background
+      td: span.color-block(style='background:#fff')
+      td: code #ffffff
+      td: code @white
+    tr
+      td Dark Gray/Foreground
+      td: span.color-block(style='background:#191919')
+      td: code #191919 
+      td: code @near-black
+    tr
+      td Orange
+      td: span.color-block(style='background:#c44833')
+      td: code #c44833
+      td: code @orange
+    tr
+      td Light orange
+      td: span.color-block(style='background:#de8d7f')
+      td: code #de8d7f
+      td: code @light-orange
+    tr
+      td Light blue
+      td: span.color-block(style='background:#a0d3e6')
+      td: code #a0d3e6
+      td: code @light-blue
+    tr 
+      td Darker blue
+      td: span.color-block(style='background:#277693')
+      td: code #277693
+      td: code @dark-blue
+    tr 
+      td Green
+      td: span.color-block(style='background:#00b233')
+      td: code #00b233
+      td: code @green
+    tr
+      td Light green
+      td: span.color-block(style='background:#00ff48')
+      td: code #00ff48
+      td: code @light-green
+    tr
+      td Red
+      td: span.color-block(style='background:#b20000')
+      td: code #b20000
+      td: code @red
+    tr
+      td Light red
+      td: span.color-block(style='background:#ff4c4c')
+      td: code #ff4c4c
+      td: code @light-red
 
 h2 Headings
 
