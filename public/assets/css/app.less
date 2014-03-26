@@ -50,11 +50,31 @@ span.color-block {
   border: solid 1px @near-black;
 }
 
+/**
+ * Base/Globals
+ */
+.text-center .img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  background: @white url(../img/bg-trans-800.png) no-repeat center -4px;
+}
+
 /** 
  * Site header
  */
 .site-header {
-
+  padding: 2em 0;
+  text-align: center;
+}
+.img-logo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**
@@ -90,7 +110,16 @@ span.color-block {
 
 }
 
+// sm and up
+@media (min-width: @screen-sm-min) {
+  body {
+    background-image: url(../img/bg-trans-1600.png);
+  }
+}
+
 // only affects md and lg
 @media (min-width: @screen-md-min) {
-
+  body {
+    background-image: url(../img/bg-trans.png);
+  }
 }

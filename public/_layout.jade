@@ -23,6 +23,8 @@ head
 body
   header.site-header
     .container
+      a.link-logo(href='/', title='#{ site.name }')
+        img.img-logo.img-responsive(src='/assets/img/web-logo-main-500.png', alt='#{ site.name }')
   .site-main
     .container
       != yield
