@@ -19,8 +19,8 @@
 @light-red: #ff4c4c;
 
 // fonts
-@font-family-brand-sans-serif: Arial;
-@font-family-brand-special: "Some special font name";
+@font-family-brand-sans-serif: 'Metrophobic', Arial;
+@font-family-brand-special: "Orbitron";
 
 /**
  * Twitter bootstrap overrides
@@ -36,6 +36,11 @@
 @brand-info: @dark-blue;
 @brand-warning: @orange;
 @brand-danger: @red;
+
+// fonts
+@font-size-base: 16px;
+@font-family-sans-serif: @font-family-brand-sans-serif;
+@headings-font-family: @font-family-brand-special;
 
 // navbar
 
@@ -62,19 +67,15 @@ img {
 }
 
 body {
-  background: @white url(../img/bg-trans-800.png) no-repeat center -4px;
+  background: @white url(../img/bg-trans-800.png) repeat-x left -4px;
 }
 
 /** 
  * Site header
  */
 .site-header {
-  padding: 2em 0;
+  padding: 2em 0 4em;
   text-align: center;
-}
-.img-logo {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /**
@@ -82,7 +83,15 @@ body {
  */
 
 .site-main {
+  text-align: center;
 
+  strong {
+    font-family: @font-family-brand-special;
+    font-weight: bold;
+  }
+  p {
+    margin: 1.25em 0;
+  }
 }
 
 /**
@@ -90,7 +99,8 @@ body {
  */
 
 .site-footer {
-
+  font-size: @font-size-small - 1;
+  margin: 3em 0 0;
 }
 
 /**
@@ -107,19 +117,32 @@ body {
 
 // only affects xs and sm 
 @media (max-width: @screen-sm-max) {
-
+  .img-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-footer {
+    text-align: center;
+  }
 }
 
 // sm and up
 @media (min-width: @screen-sm-min) {
   body {
-    background-image: url(../img/bg-trans-1600.png);
+    background-image: url(../img/bg-trans-1200.png);
   }
 }
 
 // only affects md and lg
 @media (min-width: @screen-md-min) {
   body {
-    background-image: url(../img/bg-trans.png);
+    background-image: url(../img/bg-trans-1600.png);
+  }
+  .site-header,
+  .site-main {
+    text-align: left;
+  }
+  .site-header {
+    padding-top: 5em;
   }
 }

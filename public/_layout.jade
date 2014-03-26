@@ -5,6 +5,7 @@ head
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   title= site.name
+  link(href='//fonts.googleapis.com/css?family=Metrophobic|Orbitron:400,900,700', rel='stylesheet')
   link(href='/assets/css/app.css', rel='stylesheet')
 
   link(rel='shortcut icon', href='/favicon.ico?v=3.1')
@@ -26,8 +27,7 @@ body
       a.link-logo(href='/', title='#{ site.name }')
         img.img-logo.img-responsive(src='/assets/img/web-logo-main-500.png', alt='#{ site.name }')
   .site-main
-    .container
-      != yield
+    != yield
   footer.site-footer
     .container
       .row
