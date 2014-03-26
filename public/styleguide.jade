@@ -1,171 +1,172 @@
-.page-header
-  h1 Style Guide
-  p: small Note this styleguide is an extension of the Twitter Bootstrap CSS framework. See 
-    a(href='http://getbootstrap.com/') getbootstrap.com
-    |  for more examples.
+.container
+  .page-header
+    h1 Style Guide
+    p: small Note this styleguide is an extension of the Twitter Bootstrap CSS framework. See 
+      a(href='http://getbootstrap.com/') getbootstrap.com
+      |  for more examples.
 
-h2 Color scheme
+  h2 Color scheme
 
-table.table.table-condensed
-  thead
-    tr
-      th Name/Use
-      th Example
-      th Hex code
-      th LESS Variable
-  tbody
-    tr
-      td White/Background
-      td: span.color-block(style='background:#fff')
-      td: code #ffffff
-      td: code @white
-    tr
-      td Dark Gray/Foreground
-      td: span.color-block(style='background:#191919')
-      td: code #191919 
-      td: code @near-black
-    tr
-      td Orange
-      td: span.color-block(style='background:#c44833')
-      td: code #c44833
-      td: code @orange
-    tr
-      td Light orange
-      td: span.color-block(style='background:#de8d7f')
-      td: code #de8d7f
-      td: code @light-orange
-    tr
-      td Light blue
-      td: span.color-block(style='background:#a0d3e6')
-      td: code #a0d3e6
-      td: code @light-blue
-    tr 
-      td Darker blue
-      td: span.color-block(style='background:#277693')
-      td: code #277693
-      td: code @dark-blue
-    tr 
-      td Green
-      td: span.color-block(style='background:#00b233')
-      td: code #00b233
-      td: code @green
-    tr
-      td Light green
-      td: span.color-block(style='background:#00ff48')
-      td: code #00ff48
-      td: code @light-green
-    tr
-      td Red
-      td: span.color-block(style='background:#b20000')
-      td: code #b20000
-      td: code @red
-    tr
-      td Light red
-      td: span.color-block(style='background:#ff4c4c')
-      td: code #ff4c4c
-      td: code @light-red
+  table.table.table-condensed
+    thead
+      tr
+        th Name/Use
+        th Example
+        th Hex code
+        th LESS Variable
+    tbody
+      tr
+        td White/Background
+        td: span.color-block(style='background:#fff')
+        td: code #ffffff
+        td: code @white
+      tr
+        td Dark Gray/Foreground
+        td: span.color-block(style='background:#191919')
+        td: code #191919 
+        td: code @near-black
+      tr
+        td Orange
+        td: span.color-block(style='background:#c44833')
+        td: code #c44833
+        td: code @orange
+      tr
+        td Light orange
+        td: span.color-block(style='background:#de8d7f')
+        td: code #de8d7f
+        td: code @light-orange
+      tr
+        td Light blue
+        td: span.color-block(style='background:#a0d3e6')
+        td: code #a0d3e6
+        td: code @light-blue
+      tr 
+        td Darker blue
+        td: span.color-block(style='background:#277693')
+        td: code #277693
+        td: code @dark-blue
+      tr 
+        td Green
+        td: span.color-block(style='background:#00b233')
+        td: code #00b233
+        td: code @green
+      tr
+        td Light green
+        td: span.color-block(style='background:#00ff48')
+        td: code #00ff48
+        td: code @light-green
+      tr
+        td Red
+        td: span.color-block(style='background:#b20000')
+        td: code #b20000
+        td: code @red
+      tr
+        td Light red
+        td: span.color-block(style='background:#ff4c4c')
+        td: code #ff4c4c
+        td: code @light-red
 
-h2 Headings
+  h2 Headings
 
-h1 Heading 1
+  h1 Heading 1
 
-h2 Heading 2
+  h2 Heading 2
 
-h3 Heading 3
+  h3 Heading 3
 
-h4 Heading 4
+  h4 Heading 4
 
-h5 Heading 5
+  h5 Heading 5
 
-h6 Heading 6
+  h6 Heading 6
 
-h2 General Text
+  h2 General Text
 
-p Regular paragraph text. Lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  p Regular paragraph text. Lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-p.lead Lead paragraph text lorem ipsum quis nostrud
+  p.lead Lead paragraph text lorem ipsum quis nostrud
 
-p
-  strong Bold 
-  |  and 
-  em emphasized
-  |  text
+  p
+    strong Bold 
+    |  and 
+    em emphasized
+    |  text
 
-p: small Small text
+  p: small Small text
 
-p.text-muted Muted text
+  p.text-muted Muted text
 
-h2 Alignment
+  h2 Alignment
 
-p.text-left Left aligned text
+  p.text-left Left aligned text
 
-p.text-center Centered text
+  p.text-center Centered text
 
-p.text-right Right aligned text
+  p.text-right Right aligned text
 
-h2 Lists
+  h2 Lists
 
-h3 Bullets
+  h3 Bullets
 
-ul
-  li List item
-  li List item
-    ul
-      li Nested list item
-      li Nested list item
-      li Nested list item
-  li List item
-  li List item
+  ul
+    li List item
+    li List item
+      ul
+        li Nested list item
+        li Nested list item
+        li Nested list item
+    li List item
+    li List item
 
-h3 Numbered
+  h3 Numbered
 
-ol
-  li List item
-  li List item
-    ul
-      li Nested list item
-      li Nested list item
-      li Nested list item
-  li List item
-  li List item
+  ol
+    li List item
+    li List item
+      ul
+        li Nested list item
+        li Nested list item
+        li Nested list item
+    li List item
+    li List item
 
-h2 Blockquote
+  h2 Blockquote
 
-blockquote
-  p Blockquote lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  footer
-    |  Author Name
+  blockquote
+    p Blockquote lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    footer
+      |  Author Name
 
-blockquote.blockquote-reverse
-  p Reversed blockquote lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  footer
-    |  Author Name
+  blockquote.blockquote-reverse
+    p Reversed blockquote lorem ipsum quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    footer
+      |  Author Name
 
-h2 Buttons
+  h2 Buttons
 
-p 
-  button.btn.btn-default Default
-  | 
-  button.btn.btn-primary Primary
-  |  
-  button.btn.btn-success Success
-  |  
-  button.btn.btn-info Info
-  |  
-  button.btn.btn-warning Warning
-  |  
-  button.btn.btn-danger Danger
+  p 
+    button.btn.btn-default Default
+    | 
+    button.btn.btn-primary Primary
+    |  
+    button.btn.btn-success Success
+    |  
+    button.btn.btn-info Info
+    |  
+    button.btn.btn-warning Warning
+    |  
+    button.btn.btn-danger Danger
 
-p Make any button larger or smaller
+  p Make any button larger or smaller
 
-p 
-  button.btn.btn-default.btn-xs Extra Small
-  |  
-  button.btn.btn-default.btn-sm Small
-  |  
-  button.btn.btn-default.btn-lg Large
+  p 
+    button.btn.btn-default.btn-xs Extra Small
+    |  
+    button.btn.btn-default.btn-sm Small
+    |  
+    button.btn.btn-default.btn-lg Large
 
-p Anchors (hyperlinks) as buttons
+  p Anchors (hyperlinks) as buttons
 
-p
-  a.btn.btn-default(href='#') Link
+  p
+    a.btn.btn-default(href='#') Link
