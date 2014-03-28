@@ -20,6 +20,19 @@ module.exports = function(grunt) {
         dest: '<%= app.dest %>'
       }
     },
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 7
+        },
+        files: [{
+          expand: true,
+          cwd: 'www/',
+          src: ['*.{png,jpg,gif}', 'assets/img/*.{png,gif,jpg}'],
+          dest: 'www/'
+        }]
+      }
+    },
     rsync: {
       options: {
         args: ['--verbose'],
@@ -31,6 +44,13 @@ module.exports = function(grunt) {
           src: '<%= app.dest %>',
           dest: '<%= app.secrets.rsync.stage.dest %>',
           host: '<%= app.secrets.rsync.stage.host %>',
+        }
+      },
+      prod: {
+        options: {
+          src: '<%= app.dest %>',
+          dest: '<%= app.secrets.rsync.prod.dest %>',
+          host: '<%= app.secrets.rsync.prod.host %>',
         }
       }
     }
@@ -48,12 +68,15 @@ module.exports = function(grunt) {
     'harp:dist'
   ]);
 
-  grunt.registerTask('deploy', [
-    'rsync'
+  grunt.registerTask('images', [
+    'imagemin'
   ]);
 
-  grunt.registerTask('push', [
-    'build',
+  grunt.registerTask('optimize', [
+    'imagemin'
+  ]);
+
+  grunt.registerTask('deploy', [
     'rsync'
   ]);
 
