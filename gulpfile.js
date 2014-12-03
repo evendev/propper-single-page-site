@@ -5,7 +5,14 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var shell = require('gulp-shell');
 
-var secrets = require('secrets.json');
+var secrets = require('./secrets.json');
+
+
+
+gulp.task('imagePerms', shell.task([
+  'chmod -R 755 public/assets/img/*'
+]));
+
 
 
 gulp.task('rsync', function() {
