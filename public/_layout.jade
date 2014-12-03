@@ -26,37 +26,19 @@ html(lang='en')
       script(src='//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
   body
-    header.site-header
+    //- header.site-header
       .container
-        h1
+        h1.text-center
           a.link-logo(href='/', title='#{ site.name }')
             img.img-logo.img-responsive(src='/assets/img/web-logo-main-500.png', alt='#{ site.name }')
-
-    .container
-      nav.navbar.navbar-inverse
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#nav')
-            span.sr-only Navigate
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          ul.nav.navbar-nav#nav
-            li.active: a(href='/index.html') Home
-            li.dropdown
-              a.dropdown-toggle(href='#about', data-toggle='dropdown') About Us
-                span.caret
-              ul.dropdown-menu
-                li: a(href='/leadership.html') Leadership
-                li: a(href='/project-management.html') Project Management Process
-                li: a(href='#intl') Propper International Profile
-            li.dropdown
-              a.dropdown-toggle(href='#services', data-toggle='dropdown') Services
-                span.caret
-              ul.dropdown-menu
-                li: a(href='#target') Target Market
-                li: a(href='#negot') Negotiating Projects
-                li: a(href='#constr') Construction Services Provided
-            li: a(href='#contact') Contact Us
+    header.site-header
+      .container
+        .row
+          .col-xs-12.col-md-4
+            a.link-logo(href='/', title='#{ site.name }')
+              img.img-logo.img-responsive(src='/assets/img/web-logo-main-500.png', alt='#{ site.name }')
+          .col-xs-12.col-md-8
+            != partial('_nav')
 
     .site-main
       != yield

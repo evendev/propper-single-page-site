@@ -43,6 +43,10 @@
 @headings-font-family: @font-family-brand-special;
 
 // navbar
+@navbar-border-radius: 0;
+
+// navbar-default
+@navbar-default-bg: transparent;
 
 /** 
  * Color blocks
@@ -65,17 +69,38 @@ span.color-block {
 img {
   max-width: 100%;
 }
-
 body {
-  background: @white url(../img/bg-800.jpg) repeat-x left -4px;
+  // background: @white url(../img/bg-800.jpg) repeat-x left -4px;
+}
+dl {
+  dt {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+  }
 }
 
 /** 
  * Site header
  */
 .site-header {
-  padding: 2em 0 4em;
+  // padding: 2em 0 4em;
   text-align: center;
+  // background: url('../img/bg-trans-800.png') repeat-x center top;
+  padding: 1em 0;
+}
+
+/**
+ * Site nav
+ */
+.navbar {
+  margin-top: 4em;
+  margin-bottom: 0;
+
+  .navbar-nav > li > a {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
 
 /**
@@ -91,6 +116,14 @@ body {
   }
   p {
     margin: 1.25em 0;
+  }
+
+  .page-header {
+    h1 {
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+    }
   }
 }
 
@@ -129,20 +162,20 @@ body {
 // sm and up
 @media (min-width: @screen-sm-min) {
   body {
-    background-image: url(../img/bg-1200.jpg);
+    // background-image: url(../img/bg-1200.jpg);
   }
 }
 
 // only affects md and lg
 @media (min-width: @screen-md-min) {
   body {
-    background-image: url(../img/bg-1600.jpg);
+    // background-image: url(../img/bg-1600.jpg);
   }
   .site-header,
   .site-main {
     text-align: left;
   }
   .site-header {
-    padding-top: 5em;
+    // padding-top: 5em;
   }
 }

@@ -1,0 +1,22 @@
+nav.navbar.navbar-default
+  .navbar-header
+    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#nav')
+      span Navigate
+  .collapse.navbar-collapse#nav
+    ul.nav.navbar-nav.navbar-right
+      li.active: a(href='/') Home
+      li.dropdown
+        a.dropdown-toggle(href='#about', data-toggle='dropdown') About Us
+          span.caret
+        ul.dropdown-menu
+          li(class='#{ current.source == "leadership" ? "active" : "" }'): a(href='/leadership.html') Leadership
+          li(class='#{ current.source == "project-management" ? "active" : "" }'): a(href='/project-management.html') Project Management Process
+          li(class='#{ current.source == "international-profile" ? "active" : "" }'): a(href='/international-profile.html') Propper International Profile
+      li.dropdown
+        a.dropdown-toggle(href='#services', data-toggle='dropdown') Services
+          span.caret
+        ul.dropdown-menu
+          li: a(href='#target') Target Market
+          li: a(href='#negot') Negotiating Projects
+          li: a(href='#constr') Construction Services Provided
+      li: a(href='/contact.html') Contact Us
