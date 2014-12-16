@@ -11,7 +11,7 @@
 @near-black: #191919;
 @light-blue: #a0d3e6;
 @dark-blue: #277693;
-@orange: #c44833;
+@orange: #e16238;
 @light-orange: #de8d7f;
 @green: #00b233;
 @light-green: #00ff48;
@@ -19,8 +19,8 @@
 @light-red: #ff4c4c;
 
 // fonts
-@font-family-brand-sans-serif: 'Metrophobic', Arial;
-@font-family-brand-special: "Orbitron";
+@font-family-brand-sans-serif: 'Source Sans Pro', sans-serif;
+@font-family-brand-special: 'Orbitron';
 
 /**
  * Twitter bootstrap overrides
@@ -36,6 +36,7 @@
 @brand-info: @dark-blue;
 @brand-warning: @orange;
 @brand-danger: @red;
+@hr-border: @orange;
 
 // fonts
 @font-size-base: 16px;
@@ -72,6 +73,10 @@ img {
 body {
   // background: @white url(../img/bg-800.jpg) repeat-x left -4px;
 }
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 dl {
   dt {
     text-transform: uppercase;
@@ -79,14 +84,23 @@ dl {
     margin: 1em 0 0.5em;
   }
 }
+hr {
+  border-width: 5px;
+  width: 12%;
+}
+.l-padded {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.page-header {
+  border-bottom: none transparent;
+}
 
 /** 
  * Site header
  */
 .site-header {
-  // padding: 2em 0 4em;
   text-align: center;
-  // background: url('../img/bg-trans-800.png') repeat-x center top;
   padding: 1em 0;
 }
 
@@ -108,12 +122,10 @@ dl {
  */
 
 .site-main {
-  text-align: center;
+  border-top: solid 10px @orange;
+  border-bottom: solid 10px @orange;
+  padding: 2em 0;
 
-  strong {
-    font-family: @font-family-brand-special;
-    font-weight: bold;
-  }
   p {
     margin: 1.25em 0;
   }
@@ -133,7 +145,10 @@ dl {
 
 .site-footer {
   font-size: @font-size-small - 1;
-  margin: 3em 0 0;
+  // margin: 3em 0 0;
+  text-align: center;
+  padding: 2em 0;
+  // background-color: @light-blue;
 }
 
 /**
@@ -153,9 +168,6 @@ dl {
   .img-logo {
     margin-left: auto;
     margin-right: auto;
-  }
-  .site-footer {
-    text-align: center;
   }
 }
 
