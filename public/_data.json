@@ -1,7 +1,32 @@
 {
   "index": {
+    "title": "",
     "meta": {
       "description": "Propper Construction Services is a full-service construction company based in St. Louis, MO, catering to commercial and government clients."
     }
+  },
+  "leadership": {
+    "title": "Leadership"
+  },
+  "project-management": {
+    "title": "Project Management Process"
+  },
+  "international-profile": {
+    "title": "Propper International&trade;"
+  },
+  "target-market": {
+    "title": "Target Market"
+  },
+  "negotiating-projects": {
+    "title": "Negotiating Projects"
+  },
+  "construction-services": {
+    "title": "Construction Services Provided"
+  },
+  "real-estate": {
+    "title": "Real Estate Development"
+  },
+  "contact": {
+    "title": "Contact Us"
   }
 }
