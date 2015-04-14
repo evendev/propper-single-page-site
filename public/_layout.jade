@@ -31,8 +31,9 @@ html(lang='en')
       .container
         .row
           .col-xs-12.col-md-4
-            a.link-logo(href='/', title='#{ site.name }')
-              img.img-logo.img-responsive(src='/assets/img/web-logo-main-500.png', alt='#{ site.name }')
+            .logo-container
+              a.link-logo(href='/', title='#{ site.name }')
+                img.img-logo.img-responsive(src='/assets/img/web-logo-main-500.png', alt='#{ site.name }')
           .col-xs-12.col-md-8
             != partial('_nav')
 

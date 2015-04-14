@@ -49,6 +49,8 @@
 // navbar-default
 @navbar-default-bg: transparent;
 
+// navbar-collapse breakpoint
+@grid-float-breakpoint: @screen-sm-max;
 
 
 /** 
@@ -108,22 +110,56 @@ hr {
  * Site header
  */
 .site-header {
-  text-align: center;
   padding: 1em 0;
   background: @white url(../img/bg-trans-800.jpg) repeat-x center -20px;
+
+  @media (max-width: @screen-sm-max) {
+    .logo-container {
+      text-align: center;
+      margin: 1em auto;
+      .img-responsive {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }
 
 /**
  * Site nav
  */
 .navbar {
-  margin-top: 4em;
+  margin-top: 1em;
   margin-bottom: 0;
+  text-align: left;
 
   .navbar-nav > li > a {
     text-transform: uppercase;
     font-weight: bold;
   }
+
+  @media (max-width: @screen-sm-max) {
+    .navbar-header {
+      text-align: center;
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .navbar-collapse {
+      background-color: @white;
+    }
+  }
+
+  @media (min-width: @screen-md-min) {
+    padding-top: 2em;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    padding-top: 3em;
+  }
+
 }
 
 /**
@@ -157,45 +193,4 @@ hr {
   text-align: center;
   padding: 2em 0;
   background: @white url(../img/bg-trans-800.jpg) repeat-x center -20px;
-}
-
-/**
- * Media queries
- *
- * See below for more info
- * @link http://getbootstrap.com/css/#grid-media-queries
- */
-
-// only affects xs
-@media (max-width: @screen-xs-max) {
-
-}
-
-// only affects xs and sm 
-@media (max-width: @screen-sm-max) {
-  .img-logo {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-// sm and up
-@media (min-width: @screen-sm-min) {
-  body {
-    // background-image: url(../img/bg-1200.jpg);
-  }
-}
-
-// only affects md and lg
-@media (min-width: @screen-md-min) {
-  body {
-    // background-image: url(../img/bg-1600.jpg);
-  }
-  .site-header,
-  .site-main {
-    text-align: left;
-  }
-  .site-header {
-    // padding-top: 5em;
-  }
 }
