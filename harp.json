@@ -2,7 +2,8 @@
   "globals": {
     "site": {
       "name": "Propper Construction Services",
-      "gmapUrl": "https://goo.gl/maps/dzwf8"
+      "gmapUrl": "https://goo.gl/maps/dzwf8",
+      "googleAnalyticsUA": ""
     }
   }
 }
